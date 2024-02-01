@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css')}}">
+
+
+    </head>
+
+    <body >
+        <header class="header">
+            <h1 class="logo"><a href="#">Twitter Data Classification</a></h1>
+          <ul class="main-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">predict</a></li>
+              <li><a href="#">Devlopers</a></li>
+              
+          </ul>
+        </header> 
+        <section class="home">
+            <div class="home1">
+                <h1>Twitter</h1>
+                <div class="data">
+                <P>Twitter is a social media platform that allows users to share short, 280-character messages called "tweets". It was created in 2006 and has since become a popular platform for news, entertainment, and communication. Twitter is known for its real-time nature, making it a popular source for breaking news and live events. It has over 330 million active users worldwide and is available in multiple languages. Twitter has also become a popular platform for businesses and individuals to connect with their audience and promote their products or services.</p>
+                </div>
+            </div>
+            <div class="home2">
+                <img src="static/images/logo.png" alt="" class="about_img" >
+            </div>
+
+
+
+        </section>
+        <section class="predict">
+            <div class="predict1">
+                <h2>PREDICT YOUR TWEETS</h2>
+                <div class="enter">
+                    
+                
+                <form method="POST", action="{{url_for('home')}}">
+                    <div class="title">
+                    <p class="en">ENTER  TWEET</p>
+                    </div>
+                    <div class="value">
+                    <textarea  rows="8" cols="50" name='a', placeholder="enter 1">
+                    </textarea>
+                </div>
+                <div class="button">
+                     <input class="buttons" type="submit",value='predict'>
+                    </div>
+                 </form>
+                </div>
+            </div>
+            <div class="predict2">
+            
+                </center>
+            
+            </div>
+        </section>
+        <section class="about">
+            <section>
+            
+            
+
+
+
+        
+
+        
+
+       
+    
+
+        
+    </center>
+
+    </body>
+</html>
